@@ -1,0 +1,24 @@
+<script>
+
+    // 2.Write javascript program to print 1 to n number and find even number sum using while loop. (5 marks)
+
+    let no = parseInt(prompt("enter number :- "));
+
+    for (i = 1; i <= no; i++) {
+        document.write(i);
+        document.write('<br>')
+    }
+    document.write('Even number :')
+    document.write('<br>')
+
+    let sum = 0
+    for (i = 1; i <= no; i++) {
+        if (i % 2 != 0) {
+            document.write(i + ',');
+            sum += i
+        }
+    }
+    document.write('<br>')
+    document.write(`Sum :- ${sum}`);
+
+</script>

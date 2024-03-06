@@ -1,0 +1,19 @@
+<script>
+    //     3. Write a javascript pattern using for loop. (5 marks)
+    // A B C D E
+    //   B C D E
+    //     C D E
+    //       D E
+    //         E
+
+    for (i = 0; i < 5; i++) {
+        for (k = 0; k < i; k++) {
+            document.write('&nbsp&nbsp');
+        }
+        for (j = i; j < 5; j++) {
+            document.write(String.fromCharCode(65 + j));
+        }
+        document.write('<br>');
+    }
+
+</script>
